@@ -200,7 +200,7 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
             $await(Jscex.Async.sleep(300));
         }));
 		
