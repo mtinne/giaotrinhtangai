@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			
 		<title>20 tháng 10 </title>    
@@ -33,8 +33,9 @@
 	body::before {
 		content: "";
 		position: absolute;
-		top: 0; left: 0;
-		width: 100%; height: 100vh;
+		
+		width: 100%; 
+		height: 100vh;
 		background-image: url("0103.jpg");
 		background-size: cover;
 		background-position: center;
@@ -42,7 +43,13 @@
 		z-index: -1; 
 	}
 	@media (max-width: 420px) {
-    .hero { height: 50vh; }
+    .hero { 
+		width: 100%;
+		height: 100vh;
+		background-image: url("0103.jpg");
+		background-size: cover;       
+		background-position: center;  
+	}
 	}
 	#text {
 		font-family: 'Poppins', 'Segoe UI', 'Gill Sans', Calibri, sans-serif;                     
@@ -193,7 +200,7 @@
             foot.draw();
             tree.snapshot("p2", 500, 0, 610, 680);
 
-            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            
             $await(Jscex.Async.sleep(300));
         }));
 		
